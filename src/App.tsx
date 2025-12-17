@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Shield, CheckCircle, FileText, ArrowRight, Lock } from 'lucide-react';
 
 function App() {
