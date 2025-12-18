@@ -37,10 +37,10 @@ function App() {
             Is Your Quality System <br className="hidden lg:block" />
             <span className="text-blue-600">Audit-Ready?</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Get a free, AI-powered ISO 13485 gap analysis in under 5 minutes. 
-            Identify critical risks before the auditor does.
-          </p>
+<p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+  Get a free, AI-powered <strong>ISO 13485 & FDA 21 CFR 820</strong> gap analysis <strong>in minutes</strong>. 
+  Identify critical risks before the auditor does.
+</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
               href="https://app.medcomplyai.com" 
