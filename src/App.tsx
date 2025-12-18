@@ -15,12 +15,6 @@ function App() {
           <div className="flex items-center gap-4">
             <a 
               href="https://app.medcomplyai.com" 
-              className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
-            >
-              Login
-            </a>
-            <a 
-              href="https://app.medcomplyai.com" 
               className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors shadow-sm"
             >
               Start Free Assessment
