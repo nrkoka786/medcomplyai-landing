@@ -45,29 +45,35 @@
             
             <div class="bg-white border-2 border-slate-200 rounded-[2.5rem] p-10 hover:border-blue-200 transition-all shadow-sm flex flex-col">
                 <div class="mb-6">
-                    <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full">v0.1 Sandbox</span>
+                    <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full">
+                        V0.1 Diagnostic
+                    </span>
                 </div>
-                <h3 class="text-2xl font-black text-slate-800 mb-4">Community Beta</h3>
+                <h3 class="text-2xl font-black text-slate-800 mb-4">Standard Portal</h3>
                 <p class="text-slate-500 font-medium mb-8 leading-relaxed flex-1">
-                    Ideal for early-stage teams. Diagnostic discovery of gaps against ISO 13485 in a free sandbox environment.
+                    Ideal for early-stage teams. Perform a preliminary diagnostic discovery of gaps against ISO 13485 in a free assessment environment.
                 </p>
                 <ul class="space-y-4 mb-10">
-                    <li class="flex items-center gap-3 text-sm font-bold text-slate-600">✓ Diagnostic Gap Discovery</li>
-                    <li class="flex items-center gap-3 text-sm font-bold text-slate-400 line-through">✕ Formal Audit Trail</li>
+                    <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                        <span class="text-emerald-500">✓</span> Diagnostic Gap Discovery
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-bold text-slate-400 line-through">
+                        ✕ Formal Audit Trail
+                    </li>
                 </ul>
                 <a href="https://app.medcomplyai.com" class="block text-center py-4 bg-slate-100 text-slate-800 font-black rounded-2xl hover:bg-slate-200 transition-all uppercase tracking-widest text-xs">
-                    Enter Community Beta
+                    Start Free Assessment
                 </a>
             </div>
 
-            <div class="bg-slate-900 border-2 border-blue-500 rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden flex flex-col">
+            <div class="bg-slate-900 border-2 border-blue-500 rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden flex flex-col text-white">
                 <div class="absolute top-0 right-0 p-6">
                     <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-black shadow-lg">V1</div>
                 </div>
                 <div class="mb-6">
                     <span class="bg-blue-600 text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full">V1.0 Enterprise</span>
                 </div>
-                <h3 class="text-2xl font-black text-white mb-4">Enterprise Portal</h3>
+                <h3 class="text-2xl font-black mb-4">Enterprise Portal</h3>
                 <p class="text-slate-400 font-medium mb-8 leading-relaxed flex-1">
                     Validated reports with timestamped audit trails and authorized signatory lines for official regulatory submissions.
                 </p>
@@ -86,9 +92,7 @@
     <div id="howItWorksModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
         <div class="bg-white rounded-[2.5rem] max-w-2xl w-full p-10 shadow-2xl relative animate-in fade-in zoom-in duration-300">
             <button onclick="toggleModal()" class="absolute top-6 right-8 text-slate-400 hover:text-slate-600 text-2xl font-black transition-colors">&times;</button>
-            
             <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-8">How MedComplyAI Works</h2>
-            
             <div class="space-y-8">
                 <div class="flex gap-6">
                     <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-black shrink-0">1</div>
@@ -97,7 +101,6 @@
                         <p class="text-slate-500 text-sm leading-relaxed font-medium">Upload your design specs. Our AI scans for specific ISO 13485 clauses and evidence.</p>
                     </div>
                 </div>
-
                 <div class="flex gap-6">
                     <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-black shrink-0">2</div>
                     <div>
@@ -105,7 +108,6 @@
                         <p class="text-slate-500 text-sm leading-relaxed font-medium">Review AI findings and click 'Verify' to create a permanent, timestamped audit trail.</p>
                     </div>
                 </div>
-
                 <div class="flex gap-6">
                     <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-black shrink-0">3</div>
                     <div>
@@ -114,7 +116,6 @@
                     </div>
                 </div>
             </div>
-
             <button onclick="toggleModal()" class="w-full mt-10 py-4 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-700 transition-all uppercase tracking-widest text-xs">Got it, thanks!</button>
         </div>
     </div>
@@ -126,17 +127,12 @@
     <script>
         function toggleModal() {
             const modal = document.getElementById('howItWorksModal');
-            const body = document.body;
+            document.body.classList.toggle('modal-active');
             modal.classList.toggle('hidden');
-            body.classList.toggle('modal-active');
         }
-
-        // Close modal if clicking on the background overlay
         window.onclick = function(event) {
             const modal = document.getElementById('howItWorksModal');
-            if (event.target == modal) {
-                toggleModal();
-            }
+            if (event.target == modal) { toggleModal(); }
         }
     </script>
 </body>
