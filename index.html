@@ -70,43 +70,31 @@
                 <p class="text-slate-400 font-medium mb-4 leading-relaxed">
                     Built for QA/RA professionals. Generate validated technical reports with timestamped audit trails and signatory verification.
                 </p>
-                <p class="text-blue-400 text-xs font-bold mb-8 uppercase tracking-tight">
-                    Currently in private beta. Join the waitlist for validated audit-ready reporting.
+                <p class="text-blue-400 text-xs font-bold mb-6 uppercase tracking-tight">
+                    Join the waitlist for validated audit-ready reporting.
                 </p>
-                <ul class="space-y-4 mb-10">
+
+                <form action="https://formspree.io/f/mjkadblv" method="POST" class="flex flex-col gap-3 mb-10">
+                    <input 
+                        type="email" 
+                        name="email"
+                        required
+                        placeholder="Enter your work email" 
+                        class="w-full px-5 py-4 bg-slate-800 border border-slate-700 rounded-2xl text-white text-sm focus:outline-none focus:border-blue-500 transition-all"
+                    >
+                    <button type="submit" class="w-full py-4 bg-blue-600 text-white font-black rounded-2xl uppercase tracking-widest text-xs shadow-xl shadow-blue-900/50 hover:bg-blue-500 transition-all">
+                        Join the Waitlist
+                    </button>
+                </form>
+
+                <ul class="space-y-4">
                     <li class="flex items-center gap-3 text-sm font-bold text-slate-300">
                         <span class="text-slate-600">✓</span> Timestamped Audit Trail
                     </li>
                     <li class="flex items-center gap-3 text-sm font-bold text-slate-300">
                         <span class="text-slate-600">✓</span> Audit-Ready PDF Export
                     </li>
-                    <li class="flex items-center gap-3 text-sm font-bold text-slate-300">
-                        <span class="text-slate-600">✓</span> Regulatory Disclaimer/Signatory
-                    </li>
                 </ul>
-                <button disabled class="w-full block text-center py-4 bg-slate-800 text-slate-500 font-black rounded-2xl uppercase tracking-widest text-xs cursor-not-allowed">
-                    Enterprise Portal - Coming Soon
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white py-24 border-t border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-            <div>
-                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-black mb-6">01</div>
-                <h4 class="text-xl font-black text-slate-800 mb-4">Instant Feedback</h4>
-                <p class="text-slate-500 font-medium leading-relaxed">Don't wait weeks for a consultant report. Get immediate AI-powered insights into your audit readiness.</p>
-            </div>
-            <div>
-                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-black mb-6">02</div>
-                <h4 class="text-xl font-black text-slate-800 mb-4">Audit-Proof Logic</h4>
-                <p class="text-slate-500 font-medium leading-relaxed">Built on specific clauses from ISO 13485 and FDA 21 CFR 820 to ensure technical accuracy.</p>
-            </div>
-            <div>
-                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-black mb-6">03</div>
-                <h4 class="text-xl font-black text-slate-800 mb-4">Actionable Reports</h4>
-                <p class="text-slate-500 font-medium leading-relaxed">Unlock a comprehensive PDF report with clear gap narratives for your technical file.</p>
             </div>
         </div>
     </section>
